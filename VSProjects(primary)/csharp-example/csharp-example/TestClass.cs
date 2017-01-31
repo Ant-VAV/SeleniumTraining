@@ -6,7 +6,7 @@ namespace csharp_example
     /// <summary>
     ///     Задание http://software-testing.ru/lms/mod/assign/view.php?id=38582
     /// </summary>
-    public class TestClass : BrowserTestBase
+    public class TestClass : ChromeTestBase
     {
         private readonly string namePassword = "admin";
         private readonly string baseUrl = @"http://localhost/litecart/admin/";

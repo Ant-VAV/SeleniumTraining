@@ -63,9 +63,12 @@
     </Otherwise>
   </Choose>
   <ItemGroup>
-    <Compile Include="BrowserTestBase.cs" />
+    <Compile Include="ChromeTestBase.cs" />
+    <Compile Include="FirefoxESRTestBase.cs" />
+    <Compile Include="IETestBase.cs" />
     <Compile Include="TestClass.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="FirefoxTestBase.cs" />
   </ItemGroup>
   <ItemGroup>
     <None Include="packages.config" />
