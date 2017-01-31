@@ -1,7 +1,7 @@
 ﻿using NUnit.Framework;
 using OpenQA.Selenium;
 
-namespace csharp_example
+namespace MyTestingProject
 {
     /// <summary>
     ///     Задание http://software-testing.ru/lms/mod/assign/view.php?id=38582

@@ -1,12 +1,12 @@
 ﻿using System;
 using NUnit.Framework;
 using OpenQA.Selenium;
-using OpenQA.Selenium.Firefox;
+using OpenQA.Selenium.IE;
 using OpenQA.Selenium.Support.UI;
 
-namespace csharp_example
+namespace MyTestingProject
 {
-    public class FirefoxESRTestBase
+    public class IETestBase
     {
         protected IWebDriver Driver;
         protected WebDriverWait Wait;
@@ -14,12 +14,7 @@ namespace csharp_example
         [SetUp]
         public void SetUp()
         {
-            var options = new FirefoxOptions
-            {
-                UseLegacyImplementation = true,
-                BrowserExecutableLocation = @"C:\Program Files (x86)\Mozilla Firefox ESR\firefox.exe"
-            };
-            Driver = new FirefoxDriver(options);
+            Driver = new InternetExplorerDriver();
             Wait = new WebDriverWait(Driver, TimeSpan.FromSeconds(10));
         }
 
