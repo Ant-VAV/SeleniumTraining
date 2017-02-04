@@ -63,12 +63,16 @@
     </Otherwise>
   </Choose>
   <ItemGroup>
-    <Compile Include="ChromeTestBase.cs" />
-    <Compile Include="FirefoxESRTestBase.cs" />
-    <Compile Include="IETestBase.cs" />
-    <Compile Include="TestClass.cs" />
+    <Compile Include="Tasks\FindTaskTwo.cs" />
+    <Compile Include="Utils\ChromeTestBase.cs" />
+    <Compile Include="Tasks\FindTaskOne.cs" />
+    <Compile Include="Utils\FirefoxESRTestBase.cs" />
+    <Compile Include="Utils\DriverExtensions.cs" />
+    <Compile Include="Utils\IETestBase.cs" />
+    <Compile Include="Tasks\TestClass.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
-    <Compile Include="FirefoxTestBase.cs" />
+    <Compile Include="Utils\FirefoxTestBase.cs" />
+    <Compile Include="Utils\WebElementExtensions.cs" />
   </ItemGroup>
   <ItemGroup>
     <None Include="packages.config" />

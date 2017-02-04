@@ -12,7 +12,7 @@ namespace MyTestingProject
         protected WebDriverWait Wait;
 
         [SetUp]
-        public void SetUp()
+        public virtual void SetUp()
         {
             Driver = new ChromeDriver();
             Wait = new WebDriverWait(Driver, TimeSpan.FromSeconds(10));
