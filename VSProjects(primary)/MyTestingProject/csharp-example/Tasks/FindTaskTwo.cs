@@ -19,9 +19,9 @@ namespace MyTestingProject
         [Test]
         public void CheckThemAll()
         {
-            var getAllDucks = Driver.ByCSSAll(".product");
+            var allDucks = Driver.ByCSSAll(".product");
 
-            foreach (var duck in getAllDucks)
+            foreach (var duck in allDucks)
             {
                 Assert.True(HasExactlyOneSticker(duck));
             }
