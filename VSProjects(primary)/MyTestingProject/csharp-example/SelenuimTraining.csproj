@@ -63,9 +63,10 @@
     </Otherwise>
   </Choose>
   <ItemGroup>
-    <Compile Include="Tasks\FindTaskTwo.cs" />
+    <Compile Include="Tasks\TaskTen.cs" />
+    <Compile Include="Tasks\TaskEight.cs" />
     <Compile Include="Utils\ChromeTestBase.cs" />
-    <Compile Include="Tasks\FindTaskOne.cs" />
+    <Compile Include="Tasks\TaskSeven.cs" />
     <Compile Include="Utils\FirefoxESRTestBase.cs" />
     <Compile Include="Utils\DriverExtensions.cs" />
     <Compile Include="Utils\IETestBase.cs" />
