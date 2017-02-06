@@ -5,7 +5,7 @@ namespace MyTestingProject
     /// <summary>
     ///     Задание http://software-testing.ru/lms/mod/assign/view.php?id=38588
     /// </summary>
-    public class FindTaskOne : ChromeTestBase
+    public class TaskSeven : ChromeTestBase
     {
         public override void SetUp()
         {
