@@ -64,6 +64,7 @@
   </Choose>
   <ItemGroup>
     <Compile Include="Tasks\TaskNine.cs" />
+    <Compile Include="Tasks\TaskEleven.cs" />
     <Compile Include="Tasks\TaskTen.cs" />
     <Compile Include="Tasks\TaskEight.cs" />
     <Compile Include="Utils\ChromeTestBase.cs" />
