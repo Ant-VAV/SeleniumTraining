@@ -1,5 +1,7 @@
-﻿using System.Collections.ObjectModel;
+﻿using System;
+using System.Collections.ObjectModel;
 using OpenQA.Selenium;
+using OpenQA.Selenium.Support.UI;
 
 namespace MyTestingProject
 {
@@ -49,6 +51,24 @@ namespace MyTestingProject
         public static ReadOnlyCollection<IWebElement> ByCSSAll(this IWebDriver driver, string cssSelector)
         {
             return driver.FindElements(By.CssSelector(cssSelector));
+        }
+
+        public static void InputValue(this IWebDriver driver, string cssSelector, string value)
+        {
+            var element = driver.ByCSS(cssSelector);
+            element.Clear();
+            element.SendKeys(value);
+        }
+
+        public static void ClickElement(this IWebDriver driver, string cssSelector)
+        {
+            driver.ByCSS(cssSelector).Click();
+        }
+
+        public static void WaitForElement(this IWebDriver driver, string cssSelector)
+        {
+            var wait = new WebDriverWait(driver, TimeSpan.FromSeconds(10));
+            wait.Until(ExpectedConditions.ElementIsVisible(By.CssSelector(cssSelector)));
         }
     }
 }

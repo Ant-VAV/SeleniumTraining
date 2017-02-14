@@ -63,8 +63,9 @@
     </Otherwise>
   </Choose>
   <ItemGroup>
-    <Compile Include="Tasks\TaskNine.cs" />
     <Compile Include="Tasks\TaskEleven.cs" />
+    <Compile Include="Tasks\TaskNine.cs" />
+    <Compile Include="Tasks\TaskTwelve.cs" />
     <Compile Include="Tasks\TaskTen.cs" />
     <Compile Include="Tasks\TaskEight.cs" />
     <Compile Include="Utils\ChromeTestBase.cs" />
@@ -79,6 +80,12 @@
   </ItemGroup>
   <ItemGroup>
     <None Include="packages.config" />
+  </ItemGroup>
+  <ItemGroup />
+  <ItemGroup>
+    <Content Include="Tasks\Files\duck.jpg">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
   </ItemGroup>
   <Choose>
     <When Condition="'$(VisualStudioVersion)' == '10.0' And '$(IsCodedUITest)' == 'True'">
