@@ -6,7 +6,7 @@ using OpenQA.Selenium.Support.UI;
 namespace MyTestingProject
 {
     /// <summary>
-    ///     Задание http://software-testing.ru/lms/mod/assign/view.php?id=38594
+    ///     Задание http://software-testing.ru/lms/mod/assign/view.php?id=38597
     /// </summary>
     public class TaskThirteen : ChromeTestBase
     {
