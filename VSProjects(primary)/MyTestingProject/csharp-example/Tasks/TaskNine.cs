@@ -34,7 +34,7 @@ namespace MyTestingProject
             }
             CheckAlphabetOrder(listOfCountries);
 
-            CheckZonesForListOfCountries(listOfCountryWZones, "#table-zones td:nth-of-type(3)");
+            CheckZonesForListOfCountries(listOfCountryWZones, @"#table-zones td:nth-of-type(3) [type=""hidden""]");
         }
 
         [Test]
