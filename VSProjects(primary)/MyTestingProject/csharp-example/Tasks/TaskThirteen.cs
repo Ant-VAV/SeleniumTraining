@@ -21,7 +21,7 @@ namespace MyTestingProject
         {
             for (int i = 0; i < 3; i++)
             {
-                AddDuck(i);
+                AddDuck(i+1);
             }
 
             Driver.ClickElement("#cart .link");
