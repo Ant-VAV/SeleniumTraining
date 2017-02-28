@@ -1,6 +1,8 @@
 ﻿using System;
 using System.Collections.ObjectModel;
+using System.Linq;
 using OpenQA.Selenium;
+using OpenQA.Selenium.Support.Extensions;
 using OpenQA.Selenium.Support.UI;
 
 namespace MyTestingProject
@@ -69,6 +71,25 @@ namespace MyTestingProject
         {
             var wait = new WebDriverWait(driver, TimeSpan.FromSeconds(10));
             wait.Until(ExpectedConditions.ElementIsVisible(By.CssSelector(cssSelector)));
+        }
+
+        public static string OpenEmptyWindow(this IWebDriver driver)
+        {
+            var previousWindow = driver.CurrentWindowHandle;
+            driver.ExecuteJavaScript("window.open()");
+            var wait = new WebDriverWait(driver, TimeSpan.FromSeconds(10));
+            wait.Until(d => d.WindowHandles.Count > 1);
+            var newWindow = driver.WindowHandles.ToList();
+            newWindow.RemoveAt(newWindow.IndexOf(previousWindow));
+            driver.SwitchTo().Window(newWindow[0]);
+
+            return previousWindow;
+        }
+
+        public static void GoBackToWindow(this IWebDriver driver, string windowUid)
+        {
+            driver.Close();
+            driver.SwitchTo().Window(windowUid);
         }
     }
 }

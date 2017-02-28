@@ -63,6 +63,7 @@
     </Otherwise>
   </Choose>
   <ItemGroup>
+    <Compile Include="Tasks\TaskSeventeen.cs" />
     <Compile Include="Tasks\TaskFourteen.cs" />
     <Compile Include="Tasks\TaskThirteen.cs" />
     <Compile Include="Tasks\TaskEleven.cs" />
