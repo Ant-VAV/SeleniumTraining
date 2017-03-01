@@ -21,5 +21,17 @@ namespace MyTestingProject.Utils
                 return false;
             }
         }
+
+        public static bool IsElementPresent(this IWebElement element)
+        {
+            try
+            {
+                return element.Displayed;
+            }
+            catch (NoSuchElementException ex)
+            {
+                return false;
+            }
+        }
     }
 }

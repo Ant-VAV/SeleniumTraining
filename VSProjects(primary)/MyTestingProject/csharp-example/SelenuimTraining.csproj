@@ -63,14 +63,21 @@
     </Otherwise>
   </Choose>
   <ItemGroup>
+    <Compile Include="PageObjects\Application.cs" />
+    <Compile Include="PageObjects\CartPage.cs" />
+    <Compile Include="PageObjects\GooditemPage.cs" />
+    <Compile Include="PageObjects\Page.cs" />
+    <Compile Include="PageObjects\MainPage.cs" />
     <Compile Include="Tasks\TaskSeventeen.cs" />
     <Compile Include="Tasks\TaskFourteen.cs" />
+    <Compile Include="Tasks\TaskNineteen.cs" />
     <Compile Include="Tasks\TaskThirteen.cs" />
     <Compile Include="Tasks\TaskEleven.cs" />
     <Compile Include="Tasks\TaskNine.cs" />
     <Compile Include="Tasks\TaskTwelve.cs" />
     <Compile Include="Tasks\TaskTen.cs" />
     <Compile Include="Tasks\TaskEight.cs" />
+    <Compile Include="Utils\TestBase.cs" />
     <Compile Include="Utils\ChromeTestBase.cs" />
     <Compile Include="Tasks\TaskSeven.cs" />
     <Compile Include="Utils\FirefoxESRTestBase.cs" />
